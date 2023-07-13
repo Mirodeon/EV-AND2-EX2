@@ -50,7 +50,6 @@ class HomeFragment : Fragment(), ArticleAdapter.OnItemClickListener {
         liveData = savedStateHandle?.getLiveData(NEW_ARTICLE)
         liveData?.observe(viewLifecycleOwner) { result ->
             listArticles.add(result)
-            setupRecyclerArticle()
         }
     }
 
