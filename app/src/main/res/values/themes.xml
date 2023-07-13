@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EvalAND2Exo2" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorSecondary">@color/white</item>
+    </style>
+
+    <style name="Theme.EvalAND2Exo2" parent="Base.Theme.EvalAND2Exo2" />
+
+    <style name="AppTheme.AlertDialog" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <!-- Background Color-->
+        <item name="android:background">@color/black</item>
+        <!-- Text Color for title and message -->
+        <item name="colorOnSurface">@color/white</item>
+        <!-- Style for positive button -->
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <!-- Style for negative button -->
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="@style/Widget.MaterialComponents.Button">
+        <!-- text color for the button -->
+        <item name="android:textColor">@color/black</item>
+        <!-- Background tint for the button -->
+        <item name="backgroundTint">@color/white</item>
+
+    </style>
+
+    <style name="NegativeButtonStyle" parent="@style/Widget.MaterialComponents.Button">
+        <!-- text color for the button -->
+        <item name="android:textColor">@color/black</item>
+        <!-- Background tint for the button -->
+        <item name="backgroundTint">@color/white</item>
+
+    </style>
+</resources>
