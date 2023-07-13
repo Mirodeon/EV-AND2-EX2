@@ -14,10 +14,6 @@ import com.mirodeon.eval_and2_exo2.databinding.FragmentShoppingBinding
 class ShoppingFragment : Fragment() {
     private var binding: FragmentShoppingBinding? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

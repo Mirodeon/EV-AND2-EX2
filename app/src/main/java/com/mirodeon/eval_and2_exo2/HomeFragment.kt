@@ -24,11 +24,6 @@ class HomeFragment : Fragment(), ArticleAdapter.OnItemClickListener {
         const val NEW_ARTICLE = "NEW_ARTICLE"
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
