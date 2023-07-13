@@ -50,16 +50,21 @@ class HomeFragment : Fragment(), ArticleAdapter.OnItemClickListener {
         liveData = savedStateHandle?.getLiveData(NEW_ARTICLE)
         liveData?.observe(viewLifecycleOwner) { result ->
             listArticles.add(result)
+            toggleVisibility()
             savedStateHandle?.remove<Article>(NEW_ARTICLE)
         }
     }
 
-    private fun setupRecyclerArticle() {
+    private fun toggleVisibility() {
         binding?.txtNoArticle?.visibility = if (listArticles.isNotEmpty()) {
             View.INVISIBLE
         } else {
             View.VISIBLE
         }
+    }
+
+    private fun setupRecyclerArticle() {
+        toggleVisibility()
         val recycler = binding?.containerRecyclerArticle
         recycler?.layoutManager =
             LinearLayoutManager(requireContext(), RecyclerView.VERTICAL, false)
